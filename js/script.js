@@ -1,4 +1,4 @@
- //Header burger     
+  //Header burger     
       let header__burger = document.querySelector('.burger');
         let header_menu = document.querySelector('.header__menu');
         let back = document.querySelector('body');
@@ -10,26 +10,10 @@
             back.classList.toggle('locked');
         }
 //Header burger close
+// form send
 
 //popup
-var popup = document.querySelector('.popup-wrapper');
-var btn = document.querySelector(".popup-btn");
-var span = document.querySelector(".close");
-btn.onclick = function() {
-  back.classList.add('locked');
-    popup.classList.add('show');
-}
-span.onclick = function() {
-  back.classList.remove('locked');
-    popup.classList.remove('show');
-}
 
-window.onclick = function(event) {
-    if (event.target == popup) {
-      back.classList.remove('locked');
-        popup.classList.remove('show');
-    }
-}
 
 
 
@@ -83,30 +67,6 @@ inputs.forEach(input => {
 });
 // input change close
 
-var swiper = new Swiper(".mySwiper", {
-  watchOverflow:true,
-  loop: true,
-  slidesPerView: 2,
-  spaceBetween: 36,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  breakpoints: {
-    640: {
-      slidesPerView: 1,
-      spaceBetween: 20,
-    },
-    768: {
-      slidesPerView: 2,
-      spaceBetween: 40,
-    },
-    1024: {
-      slidesPerView: 2,
-      spaceBetween: 36,
-    },
-  },
-});
 document.addEventListener("click", e => {
   let anchorlink = e.target.closest('a[href^="#"]');
   
@@ -129,6 +89,17 @@ function removeCls() {
   $('body').removeClass('locked');
 }
 // modal
+$(".popup1").on("click", function () {
+  $(".hover1").toggleClass("show");
+  $('body').toggleClass('locked');
+
+});
+$(".close").on("click", function () {
+  $(".hover1").removeClass("show");
+  $('body').removeClass('locked');
+
+});
+
 $(".popup4").on("click", function () {
   $(".hover4").toggleClass("show");
   $('body').toggleClass('locked');
@@ -183,6 +154,197 @@ jQuery(function($){
           $('body').removeClass('locked');
     }
   });
+});
+
+$('.form1').submit(function (e) {
+  let shows = document.querySelector(".form1__btn-last");
+  var empty = $(this).parent().find("input").filter(function () {
+        return this.value === "";
+  });
+  if (!empty.length) {
+        shows.classList.toggle("change");
+
+
+        shows.textContent = shows.textContent.replace('Отправить', 'Отправлено');
+        setTimeout(function () {
+
+
+              shows.classList.remove('change');
+              shows.textContent = shows.textContent.replace('Отправлено', 'Отправить');
+        }, 3000);
+        $('body').addClass('overlock');
+        //Если все графы заполнены, то показываем popup
+
+        $('form input').removeClass('input_filled');
+        //очищаем все данные текстовых полей, кроме кнопок
+        $('form input').not(':button, :submit').val('');
+        $('form textarea').not(':button, :submit').val('');
+
+  }
+  e.preventDefault();
+});
+
+$('.form__first').submit(function (e) {
+  let show = document.querySelector(".form1__first");
+  var empty = $(this).parent().find("input").filter(function () {
+        return this.value === "";
+  });
+  if (!empty.length) {
+    show.classList.toggle("change");
+
+
+    show.textContent = show.textContent.replace('Отправить', 'Отправлено');
+        setTimeout(function () {
+
+
+          show.classList.remove('change');
+          show.textContent = show.textContent.replace('Отправлено', 'Отправить');
+        }, 3000);
+        $('body').addClass('overlock');
+        //Если все графы заполнены, то показываем popup
+
+        $('form input').removeClass('input_filled');
+        //очищаем все данные текстовых полей, кроме кнопок
+        $('form input').not(':button, :submit').val('');
+        $('form textarea').not(':button, :submit').val('');
+
+  }
+  e.preventDefault();
+});
+$('.form3').submit(function (e) {
+  let show = document.querySelector(".form3__btn");
+  var empty = $(this).parent().find("input").filter(function () {
+        return this.value === "";
+  });
+  if (!empty.length) {
+    show.classList.toggle("change");
+
+
+    show.textContent = show.textContent.replace('Отправить', 'Отправлено');
+        setTimeout(function () {
+
+
+          show.classList.remove('change');
+          show.textContent = show.textContent.replace('Отправлено', 'Отправить');
+        }, 3000);
+        $('body').addClass('overlock');
+        //Если все графы заполнены, то показываем popup
+
+        $('form input').removeClass('input_filled');
+        //очищаем все данные текстовых полей, кроме кнопок
+        $('form input').not(':button, :submit').val('');
+        $('form textarea').not(':button, :submit').val('');
+
+  }
+  e.preventDefault();
+});
+$('.form4').submit(function (e) {
+  let show = document.querySelector(".form4__btn");
+  var empty = $(this).parent().find("input").filter(function () {
+        return this.value === "";
+  });
+  if (!empty.length) {
+    show.classList.toggle("change");
+
+
+    show.textContent = show.textContent.replace('Отправить', 'Отправлено');
+        setTimeout(function () {
+
+
+          show.classList.remove('change');
+          show.textContent = show.textContent.replace('Отправлено', 'Отправить');
+        }, 3000);
+        $('body').addClass('overlock');
+        //Если все графы заполнены, то показываем popup
+
+        $('form input').removeClass('input_filled');
+        //очищаем все данные текстовых полей, кроме кнопок
+        $('form input').not(':button, :submit').val('');
+        $('form textarea').not(':button, :submit').val('');
+
+  }
+  e.preventDefault();
+});
+$('.form5').submit(function (e) {
+  let show = document.querySelector(".form5__btn");
+  var empty = $(this).parent().find("input").filter(function () {
+        return this.value === "";
+  });
+  if (!empty.length) {
+    show.classList.toggle("change");
+
+
+    show.textContent = show.textContent.replace('Отправить', 'Отправлено');
+        setTimeout(function () {
+
+
+          show.classList.remove('change');
+          show.textContent = show.textContent.replace('Отправлено', 'Отправить');
+        }, 3000);
+        $('body').addClass('overlock');
+        //Если все графы заполнены, то показываем popup
+
+        $('form input').removeClass('input_filled');
+        //очищаем все данные текстовых полей, кроме кнопок
+        $('form input').not(':button, :submit').val('');
+        $('form textarea').not(':button, :submit').val('');
+
+  }
+  e.preventDefault();
+});
+$('.form6').submit(function (e) {
+  let show = document.querySelector(".form6__btn");
+  var empty = $(this).parent().find("input").filter(function () {
+        return this.value === "";
+  });
+  if (!empty.length) {
+    show.classList.toggle("change");
+
+
+    show.textContent = show.textContent.replace('Отправить', 'Отправлено');
+        setTimeout(function () {
+
+
+          show.classList.remove('change');
+          show.textContent = show.textContent.replace('Отправлено', 'Отправить');
+        }, 3000);
+        $('body').addClass('overlock');
+        //Если все графы заполнены, то показываем popup
+
+        $('form input').removeClass('input_filled');
+        //очищаем все данные текстовых полей, кроме кнопок
+        $('form input').not(':button, :submit').val('');
+        $('form textarea').not(':button, :submit').val('');
+
+  }
+  e.preventDefault();
+});
+$('.form7').submit(function (e) {
+  let show = document.querySelector(".form7__btn");
+  var empty = $(this).parent().find("input").filter(function () {
+        return this.value === "";
+  });
+  if (!empty.length) {
+    show.classList.toggle("change");
+
+
+    show.textContent = show.textContent.replace('Отправить', 'Отправлено');
+        setTimeout(function () {
+
+
+          show.classList.remove('change');
+          show.textContent = show.textContent.replace('Отправлено', 'Отправить');
+        }, 3000);
+        $('body').addClass('overlock');
+        //Если все графы заполнены, то показываем popup
+
+        $('form input').removeClass('input_filled');
+        //очищаем все данные текстовых полей, кроме кнопок
+        $('form input').not(':button, :submit').val('');
+        $('form textarea').not(':button, :submit').val('');
+
+  }
+  e.preventDefault();
 });
 
 

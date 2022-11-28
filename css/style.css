@@ -433,10 +433,26 @@ header:before {
   color: #434343;
 }
 
-.form1 {
+.form__first {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.form1,
+.form3,
+.form4,
+.form5,
+.form6,
+.form7 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 350px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -513,14 +529,13 @@ label {
 }
 
 .form1__btn {
+  height: 50px;
   cursor: pointer;
   margin-top: 48px;
   display: block;
   background: #434343;
   padding: 14px 129px;
-  max-width: -webkit-fit-content;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
+  max-width: 350px;
   width: 100%;
   font-style: normal;
   font-weight: 500;
@@ -529,6 +544,23 @@ label {
   /* identical to box height */
   border: none;
   color: #F4F1EB;
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.form1__btn:hover {
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+  background: #646464;
+}
+
+.form1__btn:focus {
+  background: #3A3A3A;
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
 }
 
 .form1__textarea span {
@@ -1002,16 +1034,14 @@ label {
 }
 
 .price__item-box2 {
-  max-height: 68px;
+  height: 68px !important;
 }
 
 .price__item-box {
-  max-height: 92px;
+  height: 92px;
   background: rgba(244, 241, 235, 0.6);
   -webkit-box-shadow: 4px 4px 12px rgba(200, 190, 178, 0.5);
           box-shadow: 4px 4px 12px rgba(200, 190, 178, 0.5);
-  -webkit-backdrop-filter: blur(30px);
-  backdrop-filter: blur(30px);
   padding: 24px 36px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1067,12 +1097,6 @@ label {
   -webkit-transition: 0.3s ease-out;
   -o-transition: 0.3s ease-out;
   transition: 0.3s ease-out;
-}
-
-.circle__price {
-  position: absolute;
-  right: 33px;
-  margin-top: 56px;
 }
 
 .price__item2 {
@@ -1380,6 +1404,53 @@ label {
 
 .last__wrap {
   max-width: 350px;
+}
+
+.form1__btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form1__btn::before {
+  opacity: 0;
+  width: 0;
+  display: block;
+  height: 20px;
+  background-size: auto;
+  background-position: center;
+  content: "";
+}
+
+.change {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: #434343 !important;
+  -webkit-transition: 0.1s ease-out;
+  -o-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+}
+
+.change::before {
+  -webkit-transition: 0.1s ease-out;
+  -o-transition: 0.1s ease-out;
+  transition: 0.1s ease-out;
+  opacity: 1 !important;
+  min-width: 24px !important;
+  display: block;
+  height: 24px !important;
+  background: url("../img/tabler_check_form.svg") !important;
+  background-size: auto;
+  background-position: center;
+  content: "";
 }
 
 .footer {
