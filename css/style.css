@@ -203,33 +203,50 @@ body.locked {
   margin-left: auto;
 }
 
+.header .menu li {
+  text-align: left;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.header .menu li:hover {
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.header .menu li:hover a {
+  font-size: 17px;
+  -webkit-transition: 0.3s ease-out;
+  -o-transition: 0.3s ease-out;
+  transition: 0.3s ease-out;
+}
+
+.header .menu li:hover:focus {
+  font-size: 17px;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
 .header .menu__item a {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
   /* identical to box height */
-  -webkit-transition: 0.3s ease-out;
-  -o-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
+  display: block;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
   color: #434343;
 }
 
 .header .menu__item a:hover {
-  font-size: 17px;
-  line-height: 21px;
-  -webkit-transition: 0.3s ease-out;
-  -o-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
-}
-
-.header .menu__item a:focus {
-  color: #3A3A3A;
-  font-size: 17px;
-  line-height: 21px;
-  -webkit-transition: 0.3s ease-out;
-  -o-transition: 0.3s ease-out;
-  transition: 0.3s ease-out;
+  -webkit-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .header .menu__item.with__submenu {
@@ -252,7 +269,7 @@ body.locked {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 48px;
+  gap: 40px;
 }
 
 .header .burger {
@@ -376,6 +393,7 @@ header:before {
 }
 
 .btn__consult:hover {
+  height: 155px;
   -webkit-box-shadow: 10px 10px 32px #C8BEB2;
           box-shadow: 10px 10px 32px #C8BEB2;
   padding: 57.5px 11px;
@@ -733,6 +751,30 @@ label {
   -webkit-transform: translateY(-75px) !important;
       -ms-transform: translateY(-75px) !important;
           transform: translateY(-75px) !important;
+}
+
+.link1 {
+  min-width: 69px;
+}
+
+.link2 {
+  min-width: 139px;
+}
+
+.link3 {
+  min-width: 93px;
+}
+
+.link4 {
+  min-width: 112px;
+}
+
+.link5 {
+  min-width: 70px;
+}
+
+.link6 {
+  min-width: 84px;
 }
 
 .services {
@@ -1690,7 +1732,7 @@ a {
   }
 
   .header .header__menu ul {
-    gap: 48px;
+    gap: 40px;
     margin-left: 40px;
   }
 }
