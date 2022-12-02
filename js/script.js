@@ -171,7 +171,7 @@ $('.form1').submit(function (e) {
 
               shows.classList.remove('change');
               shows.textContent = shows.textContent.replace('Отправлено', 'Отправить');
-        }, 3000);
+        }, 5000);
         $('body').addClass('overlock');
         //Если все графы заполнены, то показываем popup
 
@@ -199,7 +199,7 @@ $('.form__first').submit(function (e) {
 
           show.classList.remove('change');
           show.textContent = show.textContent.replace('Отправлено', 'Отправить');
-        }, 3000);
+        }, 5000);
         $('body').addClass('overlock');
         //Если все графы заполнены, то показываем popup
 
@@ -226,7 +226,7 @@ $('.form3').submit(function (e) {
 
           show.classList.remove('change');
           show.textContent = show.textContent.replace('Отправлено', 'Отправить');
-        }, 3000);
+        }, 5000);
         $('body').addClass('overlock');
         //Если все графы заполнены, то показываем popup
 
@@ -253,7 +253,7 @@ $('.form4').submit(function (e) {
 
           show.classList.remove('change');
           show.textContent = show.textContent.replace('Отправлено', 'Отправить');
-        }, 3000);
+        }, 5000);
         $('body').addClass('overlock');
         //Если все графы заполнены, то показываем popup
 
@@ -280,7 +280,7 @@ $('.form5').submit(function (e) {
 
           show.classList.remove('change');
           show.textContent = show.textContent.replace('Отправлено', 'Отправить');
-        }, 3000);
+        }, 5000);
         $('body').addClass('overlock');
         //Если все графы заполнены, то показываем popup
 
@@ -307,7 +307,7 @@ $('.form6').submit(function (e) {
 
           show.classList.remove('change');
           show.textContent = show.textContent.replace('Отправлено', 'Отправить');
-        }, 3000);
+        }, 5000);
         $('body').addClass('overlock');
         //Если все графы заполнены, то показываем popup
 
@@ -334,7 +334,7 @@ $('.form7').submit(function (e) {
 
           show.classList.remove('change');
           show.textContent = show.textContent.replace('Отправлено', 'Отправить');
-        }, 3000);
+        }, 5000);
         $('body').addClass('overlock');
         //Если все графы заполнены, то показываем popup
 
