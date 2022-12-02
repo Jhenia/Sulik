@@ -2094,6 +2094,10 @@ a {
     max-width: 127px;
   }
 
+  .footer__box2 ul {
+    margin-left: 37px;
+  }
+
   .footer__box2 ul li {
     height: 12px;
   }
@@ -2144,6 +2148,7 @@ a {
   }
 
   .footer__box2-margin {
+    margin-left: 0 !important;
     margin-top: 4px;
   }
 
