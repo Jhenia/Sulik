@@ -1924,6 +1924,12 @@ a {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+  input {
+    padding-left: 0 !important;
+    margin-left: 0 !important;
+    border-radius: 0 !important;
+  }
+
   .popup-container {
     padding: 0 20px;
   }
