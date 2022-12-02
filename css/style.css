@@ -2002,6 +2002,11 @@ a {
     padding: 36px 24px;
   }
 
+  .know__active {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
   .form__typical {
     font-size: 11px !important;
   }
