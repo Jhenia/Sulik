@@ -1931,7 +1931,120 @@ a {
   }
 }
 
+@media only screen and (max-width: 767px) and (min-width: 650px) {
+  .header .header__menu.active {
+    left: 72.7% !important;
+    width: 178px;
+  }
+}
+
 @media only screen and (max-width: 767px) and (min-width: 600px) {
+  .works__item {
+    max-width: 260px;
+  }
+
+  .works__items {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+
+  #popup2 {
+    right: auto !important;
+    bottom: -93px !important;
+    left: 85px !important;
+  }
+
+  .works__item-title {
+    margin-bottom: 30px;
+    margin-top: 104px !important;
+  }
+
+  .photo3 {
+    min-width: 238px !important;
+  }
+
+  .works__item-title {
+    position: inherit !important;
+  }
+
+  .header .header__menu.active {
+    left: 70%;
+    width: 178px;
+  }
+
+  .form1__box {
+    height: 50px;
+  }
+
+  .popup-content {
+    min-height: 400px;
+    max-width: 400px !important;
+  }
+
+  .hover3 .popup-content,
+  .hover6 .popup-content {
+    max-width: 400px !important;
+  }
+
+  .form__typical::-moz-placeholder {
+    font-size: 9px !important;
+  }
+
+  .form__typical:-ms-input-placeholder {
+    font-size: 9px !important;
+  }
+
+  .form__typical::-webkit-input-placeholder {
+    font-size: 9px !important;
+  }
+
+  .form__typical::-ms-input-placeholder {
+    font-size: 9px !important;
+  }
+
+  .form__typical::placeholder {
+    font-size: 9px !important;
+  }
+
+  .last__wrap-icon {
+    height: 234px !important;
+    max-width: 208px !important;
+  }
+
+  .last__wrap {
+    max-width: 280px;
+  }
+
+  .last__wrapper {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+
+  .nav .footer__contact {
+    position: initial !important;
+  }
+
+  .footer__contact-title,
+  .footer__mail,
+  .footer__phone {
+    font-size: 11px !important;
+  }
+
+  .footer__contact {
+    position: inherit !important;
+  }
+
+  .footer__menu-box {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+
   .swiper__wrapper {
     height: auto !important;
     min-height: 350px !important;
@@ -2162,6 +2275,11 @@ a {
 }
 
 @media only screen and (max-width: 999px) and (min-width: 768px) {
+  #popup2 {
+    right: 44px !important;
+    bottom: -50px !important;
+  }
+
   .services__subtitle {
     font-size: 21px;
   }
@@ -2540,7 +2658,7 @@ a {
   }
 
   .form__typical {
-    font-size: 11px !important;
+    font-size: 11px;
   }
 
   .form1__box input:focus + label {
@@ -2996,8 +3114,17 @@ a {
     margin-left: 0;
   }
 
+  .services__wrap {
+    padding-left: 12px;
+  }
+
   .services__line-icon {
-    margin-left: -8px;
+    background: url("../img/Arrow__mob.svg") !important;
+    margin-left: 0;
+    min-width: 12px;
+    background-size: contain !important;
+    height: 8px;
+    background-repeat: no-repeat !important;
   }
 
   .services {
