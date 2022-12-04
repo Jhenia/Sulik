@@ -1727,6 +1727,10 @@ label {
   min-width: 84px;
 }
 
+.ovelock {
+  overflow: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -2603,6 +2607,22 @@ a {
 }
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
+  .form1__box label {
+    font-size: 11px;
+  }
+
+  .price__item-box p {
+    line-height: 16px;
+  }
+
+  .price__item-box p span {
+    font-size: 15px;
+    display: block;
+    margin-top: 6px;
+    line-height: 16px;
+    text-shadow: 0 0 0.1px #434343, 0 0 0.35px #434343;
+  }
+
   input {
     padding-left: 0 !important;
     margin-left: 0 !important;
@@ -3017,7 +3037,7 @@ a {
   }
 
   .price__item2 ul li {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
   }
 
@@ -3040,7 +3060,7 @@ a {
   }
 
   .price__item-box2 {
-    height: 54px !important;
+    height: 63px !important;
   }
 
   .price__item-box2 p {
@@ -3050,7 +3070,7 @@ a {
   .price__item-box {
     margin-top: 1px;
     padding: 12px 12px;
-    height: 73px;
+    height: 80px;
     min-width: auto;
   }
 
