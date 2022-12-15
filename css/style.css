@@ -3367,13 +3367,6 @@ a {
   }
 }
 
-@media only screen and (orientation: landscape) {
-  .popup-content {
-    overflow-y: auto;
-    height: 380px;
-  }
-}
-
 .webp .photo3 { background-image: url(../img/photo3.webp); }
 
 .webp .first__item2-icon { background: url(../img/photo2.webp); }
