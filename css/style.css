@@ -3131,7 +3131,8 @@ a {
     display: block;
     margin-top: 105px;
     margin-left: 6px;
-    background: url("../img/photo3_mob.png") !important;
+    background-size: contain !important;
+    background: url("../img/photo3_mob_main.png");
     background-repeat: no-repeat !important;
   }
 
@@ -3273,8 +3274,9 @@ a {
   }
 
   .first__item2-icon {
-    background: url("../img/photo2_mob.jpg") !important;
+    background: url("../img/photo2_mob_main.jpg") !important;
     background-repeat: no-repeat !important;
+    background-size: contain !important;
     min-width: 335px;
     margin-top: 36px;
     height: 181px;
@@ -3373,10 +3375,10 @@ a {
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
 
-  .webp .photo3 { background: url(../img/photo3_mob.webp) !important; }
+  .webp .photo3 { background: url(../img/photo3_mob_main.webp); }
 }
 
 @media only screen and (max-width: 767px) and (min-width: 320px) {
 
-  .webp .first__item2-icon { background: url(../img/photo2_mob.webp) !important; }
+  .webp .first__item2-icon { background: url(../img/photo2_mob_main.webp) !important; }
 }
