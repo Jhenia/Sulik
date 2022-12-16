@@ -89,7 +89,7 @@ document.addEventListener("click", e => {
 function removeCls() {
   $('.burger').removeClass('active');
   $('.nav').removeClass('active');
-  $('body').removeClass('ovelock');
+  $('body').removeClass('locked');
 }
 // modal
 $(".popup1").on("click", function () {
